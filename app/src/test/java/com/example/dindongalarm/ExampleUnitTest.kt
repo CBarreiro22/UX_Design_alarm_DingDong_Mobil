@@ -1,4 +1,4 @@
-package com.example.dingdongalarm
+package com.example.dindongalarm
 
 import org.junit.Test
 

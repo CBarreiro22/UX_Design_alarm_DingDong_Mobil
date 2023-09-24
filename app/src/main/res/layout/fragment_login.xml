@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222935"
+    tools:context=".ui.login.LoginFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TitleLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/IconoLogin"
+        android:layout_width="178dp"
+        android:layout_height="141dp"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/IconoLogin"
+        android:src="@drawable/icon" />
+
+    <ImageButton
+        android:id="@+id/GoogleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IconoLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/GoogleButton"
+        android:src="@drawable/fixed" />
+
+    <ImageButton
+        android:id="@+id/FacebookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/facebook"
+        android:contentDescription="@string/FacebookButton"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/GoogleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/TwitterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/twitterlogin"
+        android:contentDescription="@string/TwitterButton"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/FacebookButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/TextVinculoWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textVinculo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@id/TwitterButton"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
