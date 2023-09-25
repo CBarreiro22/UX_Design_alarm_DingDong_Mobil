@@ -14,4 +14,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="TitleElegirCuenta">Elegir Cuenta</string>
     <string name="SubTitleElegirCuenta">Para ir a Ding Dong Alarm</string>
+    <string name="filtrar_por_tipo">Filtrar por tipo</string>
+    <string name="TituloAlarmasDescription">Título de la lista de alarmas</string>
+    <string name="textoAlarma">ALARMAS</string>
+    <string name="textoAlarma2">Alarma</string>
+    <string name="textolist1">Reunion semanal de equipo</string>
+    <string name="textSalir">Salir</string>
 </resources>

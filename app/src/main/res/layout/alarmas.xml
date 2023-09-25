@@ -4,6 +4,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#222935"
     tools:context=".Alarmas">
+
+
+    <TextView
+        android:id="@+id/TituloAlarmas"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/background_orange_square"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/textoAlarma"
+        android:textColor="#3A1C08"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/textSalir"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/boton_redondeado"
+        android:drawableLeft="@drawable/cruz"
+        android:paddingLeft="10dp"
+        android:text="@string/textoAlarma2"
+        android:textAllCaps="false"
+        android:textColor="#02022C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas" />
+
+    <TextView
+        android:id="@+id/Etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/filtrar_por_tipo"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="284dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="136dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas" />
+
+    <Button
+        android:id="@+id/work"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="61dp"
+        android:drawableLeft="@drawable/work"
+        android:paddingLeft="10dp"
+        android:text="@string/textolist1"
+        android:background="@drawable/border_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/casa"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_white"
+        android:drawableLeft="@drawable/cottage"
+        android:paddingLeft="10dp"
+        android:text="@string/textolist1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/work" />
+
+    <Button
+        android:id="@+id/Medicamentos"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border_white"
+        android:drawableLeft="@drawable/hearth"
+        android:paddingLeft="10dp"
+        android:text="@string/textolist1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/casa" />
+
+    <Button
+        android:id="@+id/pasatiempos"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border_white"
+        android:drawableLeft="@drawable/play"
+        android:paddingLeft="10dp"
+        android:text="@string/textolist1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Medicamentos" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
