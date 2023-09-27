@@ -20,4 +20,23 @@
     <string name="textoAlarma2">Alarma</string>
     <string name="textolist1">Reunion semanal de equipo</string>
     <string name="textSalir">Salir</string>
+    <string name="txt_nuevaAlarma_titulo">NUEVA ALARMA</string>
+    <string name="txt_nuevaAlarma_grupoAlarma">Grupo de Alarma</string>
+    <string name="txt_nuevaAlarma_cancelar">Cancelar</string>
+    <string name="txt_nuevaAlarma_guardar">Guardar</string>
+    <string name="txt_nuevaAlarma_nombre">Nombre</string>
+    <string name="txt_nuevaAlarma_repetir">Repetir</string>
+    <string name="txt_nuevaAlarma_todosDias">Todos los días</string>
+    <string name="txt_nuevaAlarma_sonido">Sonido</string>
+    <string name="txt_nuevaAlarma_acciones">Acciones</string>
+    <string name="txt_nuevaAlarma_lun">Lun</string>
+    <string name="txt_nuevaAlarma_mar">Mar</string>
+    <string name="txt_nuevaAlarma_mie">Mie</string>
+    <string name="txt_nuevaAlarma_jue">Jue</string>
+    <string name="txt_nuevaAlarma_vie">Vie</string>
+    <string name="txt_nuevaAlarma_sab">Sab</string>
+    <string name="txt_nuevaAlarma_dom">Dom</string>
+    <string name="txt_nuevaAccion_titulo">NUEVA ACCIÓN</string>
+    <string name="txt_nuevaAccion_accionesDisponibles">Acciones disponibles</string>
+
 </resources>

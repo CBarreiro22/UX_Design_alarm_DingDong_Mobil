@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#222935"
+android:foregroundTint="#702F7059"
+tools:context=".Acciones">
+
+
+    <TextView
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_nuevaAlarma_cancelar"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Etiqueta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_nuevaAlarma_guardar"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp"/>
+
+
+    <TextView
+        android:id="@+id/Etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="80dp"
+        android:text="@string/txt_nuevaAccion_accionesDisponibles"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/accionesSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAlarmas" />
+
+    <Spinner
+        android:id="@+id/accionesSpinner"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="#FAF6DE"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Etiqueta" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/ic_menu_add"
+        android:textAllCaps="false"
+        android:textColor="#02022C"
+        app:layout_constraintBottom_toBottomOf="@+id/accionesSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accionesSpinner" />
+
+    <TextView
+        android:id="@+id/tituloAlarmas"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/background_orange_square"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:gravity="center"
+        android:text="@string/txt_nuevaAccion_titulo"
+        android:textColor="#3A1C08"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

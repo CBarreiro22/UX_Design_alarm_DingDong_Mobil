@@ -23,7 +23,7 @@
 
     <ImageView
         android:id="@+id/IconoLogin"
-        android:layout_width="178dp"
+        android:layout_width="141dp"
         android:layout_height="141dp"
         android:layout_marginTop="40dp"
         android:contentDescription="@string/IconoLogin"
