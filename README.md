@@ -39,6 +39,7 @@ Luego de abrirlo seleccionar un dispositivo y proceder a correr
 
 Adicional para este proyecto se configura minSDK de 24 y max SDK de 33
 
-![image](https://github.com/CBarreiro22/UX_Design_alarm_DingDong_Mobil/assets/111206402/56df7cae-db73-4cff-afe6-455e9b7be2a4)
+![image](https://github.com/CBarreiro22/UX_Design_alarm_DingDong_Mobil/assets/111206402/d3ab5b08-f4f1-4264-b8ff-e0ead2c6887b)
+
 
 
