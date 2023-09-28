@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222935"
+    android:foregroundTint="#702F7059"
+    tools:context=".NuevaAlarma">
+
+    <TextView
+        android:id="@+id/TituloAlarmas"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/background_orange_square"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:gravity="center"
+        android:text="@string/textoAlarma"
+        android:textColor="#3A1C08"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_nuevaAlarma_cancelar"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Etiqueta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_nuevaAlarma_guardar"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_nuevaAlarma_grupoAlarma"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Etiqueta" />
+
+    <TextView
+        android:id="@+id/etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/txt_nuevaAlarma_nombre"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/txt_nuevaAlarma_nombre"
+
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/etiqueta" />
+
+    <Spinner
+        android:id="@+id/sonido"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/etiqueta3" />
+
+    <TextView
+        android:id="@+id/etiqueta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/txt_nuevaAlarma_repetir"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        android:foregroundTint="#DF1C1C"
+        android:foregroundTintMode="add"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/etiqueta2" />
+
+    <TextView
+        android:id="@+id/textViewTodosDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_todosDias"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textViewLun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#222935"
+        android:textColor="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_lun"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxLun"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxLun"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLun" />
+    <CheckBox
+        android:id="@+id/checkBoxMar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxLun"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxLun" />
+
+    <TextView
+        android:id="@+id/textViewMar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_mar"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxMar"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMar"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMar"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxLun" />
+
+    <TextView
+        android:id="@+id/textViewMie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_mie"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxMie"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMie"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMie" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMie"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxLun" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_jue"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxJue"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxJue"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxJue" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxJue"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxLun" />
+
+    <TextView
+        android:id="@+id/textViewVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_vie"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxVie"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxVie"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVie" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxVie"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxLun" />
+
+    <TextView
+        android:id="@+id/textViewSab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_sab"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxSab"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxSab"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSab" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:buttonTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSab"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxLun" />
+
+    <TextView
+        android:id="@+id/textViewDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:backgroundTint="#222935"
+        android:text="@string/txt_nuevaAlarma_dom"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxDom"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxDom"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDom" />
+
+    <TextView
+        android:id="@+id/etiqueta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:text="@string/txt_nuevaAlarma_sonido"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/sonido"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas" />
+
+    <TextView
+        android:id="@+id/tituloAlarmas"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/background_orange_square"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:gravity="center"
+        android:text="@string/txt_nuevaAlarma_titulo"
+        android:textColor="#3A1C08"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonido">
+
+        <NumberPicker
+            android:id="@+id/hourPicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:solidColor="#D27746"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="560dp" />
+
+        <NumberPicker
+            android:id="@+id/minutePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:solidColor="#D27746"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="563dp" />
+
+        <NumberPicker
+            android:id="@+id/amPmPicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:solidColor="#D27746"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/acciones"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:background="@drawable/boton_redondeado"
+        android:drawableLeft="@drawable/cruz"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_nuevaAlarma_acciones"
+        android:textAllCaps="false"
+        android:textColor="#02022C"
+        app:layout_constraintEnd_toEndOf="@+id/sonido"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

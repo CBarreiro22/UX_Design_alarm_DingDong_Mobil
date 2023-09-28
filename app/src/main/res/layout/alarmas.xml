@@ -33,9 +33,8 @@
         android:text="@string/textSalir"
         android:textColor="#ffffff"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Etiqueta"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -43,58 +42,55 @@
         android:layout_width="wrap_content"
         android:layout_height="31dp"
         android:layout_marginTop="31dp"
-        android:layout_marginEnd="30dp"
         android:background="@drawable/boton_redondeado"
         android:drawableLeft="@drawable/cruz"
         android:paddingLeft="10dp"
         android:text="@string/textoAlarma2"
         android:textAllCaps="false"
         android:textColor="#02022C"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
         app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas" />
 
     <TextView
         android:id="@+id/Etiqueta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="79dp"
+        android:layout_height="16dp"
         android:layout_marginTop="104dp"
         android:layout_marginBottom="6dp"
         android:text="@string/filtrar_por_tipo"
         android:textColor="#ffffff"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
         app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas"
         app:layout_constraintVertical_bias="0.3" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="284dp"
-        android:layout_height="40dp"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
         android:layout_marginTop="136dp"
-        android:background="#FFFFFFFF"
+        android:background="@drawable/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TituloAlarmas" />
 
     <Button
         android:id="@+id/work"
-        android:layout_width="277dp"
+        android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="61dp"
+        android:background="@drawable/border_white"
         android:drawableLeft="@drawable/work"
         android:paddingLeft="10dp"
         android:text="@string/textolist1"
-        android:background="@drawable/border_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <Button
         android:id="@+id/casa"
-        android:layout_width="277dp"
+        android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@drawable/border_white"
         android:drawableLeft="@drawable/cottage"
@@ -107,9 +103,8 @@
 
     <Button
         android:id="@+id/Medicamentos"
-        android:layout_width="277dp"
+        android:layout_width="350dp"
         android:layout_height="48dp"
-        android:layout_marginTop="0dp"
         android:background="@drawable/border_white"
         android:drawableLeft="@drawable/hearth"
         android:paddingLeft="10dp"
@@ -121,9 +116,8 @@
 
     <Button
         android:id="@+id/pasatiempos"
-        android:layout_width="277dp"
+        android:layout_width="350dp"
         android:layout_height="48dp"
-        android:layout_marginTop="0dp"
         android:background="@drawable/border_white"
         android:drawableLeft="@drawable/play"
         android:paddingLeft="10dp"
