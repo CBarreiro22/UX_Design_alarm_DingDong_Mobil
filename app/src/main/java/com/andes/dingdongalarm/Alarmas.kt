@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Spinner
+import android.widget.TextView
 
 class Alarmas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,7 @@ class Alarmas : AppCompatActivity() {
         setContentView(R.layout.alarmas)
 
         // Paso 2: Crear una lista de elementos para el Spinner
-        val elementos = listOf(" ","Trabajo", "Casa", "Medicamento", "Pasatiempo")
+        val elementos = listOf("Todos","Trabajo", "Casa", "Medicamento", "Pasatiempo")
 
         // Paso 3: Configurar el Spinner y el adaptador
         val spinner = findViewById<Spinner>(R.id.spinner)
@@ -44,6 +45,11 @@ class Alarmas : AppCompatActivity() {
         val agregarAlarmaButton = findViewById<Button>(R.id.button)
         agregarAlarmaButton.setOnClickListener {
             val intent = Intent(this, NuevaAlarma::class.java)
+            startActivity(intent)
+        }
+        val cancelar = findViewById<TextView>(R.id.salir)
+        cancelar.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }

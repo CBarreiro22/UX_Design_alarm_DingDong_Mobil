@@ -66,9 +66,9 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="350dp"
-        android:layout_height="48dp"
+        android:layout_height="0dp"
         android:layout_marginTop="5dp"
-        android:background="#FAF6DE"
+        android:background="@drawable/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Etiqueta" />
@@ -104,9 +104,9 @@
     <Spinner
         android:id="@+id/sonido"
         android:layout_width="350dp"
-        android:layout_height="48dp"
+        android:layout_height="0dp"
         android:layout_marginTop="5dp"
-        android:background="#FAF6DE"
+        android:background="@drawable/spinner"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
         app:layout_constraintTop_toBottomOf="@+id/etiqueta3" />
 
@@ -356,9 +356,10 @@
             android:id="@+id/hourPicker"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="5dp"
+            android:layout_weight="1"
             android:background="#fff"
+            android:solidColor="#D27746"
             tools:layout_editor_absoluteX="51dp"
             tools:layout_editor_absoluteY="560dp" />
 
@@ -369,6 +370,7 @@
             android:layout_weight="1"
             android:layout_margin="5dp"
             android:background="#fff"
+            android:solidColor="#D27746"
             tools:layout_editor_absoluteX="149dp"
             tools:layout_editor_absoluteY="563dp" />
 
@@ -379,6 +381,7 @@
             android:layout_weight="1"
             android:layout_margin="5dp"
             android:background="#fff"
+            android:solidColor="#D27746"
 
             />
     </LinearLayout>

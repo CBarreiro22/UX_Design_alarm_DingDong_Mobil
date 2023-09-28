@@ -38,5 +38,6 @@
     <string name="txt_nuevaAlarma_dom">Dom</string>
     <string name="txt_nuevaAccion_titulo">NUEVA ACCIÓN</string>
     <string name="txt_nuevaAccion_accionesDisponibles">Acciones disponibles</string>
+    <string name="txt_nuevaAccion_listadoAcciones">Listado de acciones</string>
 
 </resources>
